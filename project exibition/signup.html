@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user_style.css">
+</head>
+<style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: aqua;
+    height: 105px;
+}
+
+.footer {
+    background-color: rgb(160, 37, 57);
+    height: 130px;
+    DISPLAY: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+    margin: 6px -519px -3px 542px;
+}
+
+.container {
+    min-height: calc(100vh - 105px - 130px);
+}
+
+.lower-quote {
+    text-decoration: none;
+    color: black;
+}
+
+div.background {
+    margin: 0px 0px 0px -213px;
+    background-image: url("hosp.jpeg");
+    height: 550px;
+    width: 1536px;
+    background-size: 1536px 550px;
+    opacity: 0.9;
+
+}
+
+.transbox {
+    display: grid;
+
+    margin: 0px 18px 0px 500px;
+    padding: 53px 0px 0px 0px;
+    grid-template-columns: 700px;
+    grid-template-rows: 393px 3px;
+}
+
+.transbox1 {
+    display: flex;
+    background-color: #ffffff;
+    border: 1mm solid rgb(0, 0, 0);
+    opacity: 0.5;
+    border-radius: 12px;
+    margin: -16px 43px 0px -138px;
+    
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container1 {
+    background-color: blue;
+    height: 190px
+}
+
+.mid_quote {
+    margin: 33px 0px 0px 0px;
+    text-align: center;
+}
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(29, 146, 189);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+</style>
+<body>
+    <header class="header">
+        <nav>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="margin-left: 10px;border-radius: 0px;">Doctor</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">DoctorA</a>
+              <a href="#">B</a>
+              <a href="#">C</a>
+              <a href="#">D</a>
+              <a href="#">E</a>
+            </div>
+          </div>
+           
+            <ul>
+                <li><a href="home.html">Treatment</a></li>
+                <li><a href="home.html">Location</a></li>
+                <li><a href="home.html">Ambulance</a></li>
+                <li><a href="home.html">Blogs</a></li>
+                <li><a href="home.html">Doctor</a></li>
+            </ul>
+           
+        </nav>
+
+    </header>
+    <main class="container">
+        
+            <div class="transbox">
+                <div class="transbox1">
+                    <p class="mid_quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium amet,
+                        molestias magnam modi ipsam, sunt sit a animi tempora repudiandae ex porro blanditiis
+                        perspiciatis adipisci neque! Dolorum explicabo rem odio? Doloremque laboriosam fugit assumenda
+                        at cumque molestiae atque a et quam vel qui impedit, expedita rem nisi. Pariatur cum dicta earum
+                        laborum? Corrupti, suscipit! Incidunt porro modi adipisci quas consequuntur unde. Maxime
+                        architecto ab fuga mollitia error at dolor aperiam dolore laboriosam id. Illo porro culpa
+                        recusandae molestiae, mollitia doloribus veritatis enim odit facere! Quaerat odit, sint omnis
+                        non temporibus cupiditate tenetur voluptatum. Similique recusandae asperiores architecto sint
+                        atque sequi.</p>  
+                        <div class="dropdown">
+                          <button onclick="myFunction()" class="dropbtn">kuch_bhi</button>
+                          <div id="myDropdown" class="dropdown-content">
+                            <a href="#">hey</a>
+                            <a href="#">amit sugar without g😒</a>
+                            <a href="#">good night🥱</a>
+                          </div>
+                        </div>
+                         
+                
+                
+                </div>
+                
+
+            </div>
+            <div>
+
+            </div>
+    </main>
+
+
+    <div class="container1">
+        hello
+    </div>
+
+
+    <footer class="footer">
+        <div>
+            <h1><a href="home.html" class="lower-quote">COVID-19 UPDATES</a></h1>
+        </div>
+
+    </footer>
+</body>
+
+</html>
